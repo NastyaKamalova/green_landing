@@ -74,7 +74,6 @@ body {
 	color: #35E032;
 	border-color: #35E032;
 }
-
 @media (max-width:1300px) {
 	.container {
 		width: 950px;
@@ -121,6 +120,8 @@ body {
 	width: 150px;
 	height: 62.5px;
 	margin-left: 100px;
+	position: relative;
+    z-index: 10;
 }
 .burger {
 	display: none;
@@ -396,9 +397,8 @@ body {
 .box {
     border: 2.5px solid #14c285;
     border-radius: 19px;
-    width: 225px;
-    height: 225px;
     padding: 24px 20px;
+	height: 149px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -420,7 +420,6 @@ body {
 	text-align: center;
 	display: flex;
 	align-items: center;
-	text-align: center;
 	flex-wrap: wrap;
     justify-content: center;
 }
@@ -429,8 +428,7 @@ body {
 		padding: 19px 16px;
 		border: 2px solid #14C285;
 		border-radius: 15px;
-		width: 200px;
-		height: 200px;
+		height: 119px;
 	}
 	.box-title {
 		font-size: 40px;
@@ -838,13 +836,14 @@ body {
 	color: #ECFFF5;
 	padding-right: 60px;
 	background: url("./images/faq-button.svg") right center no-repeat;
-	background-size: 50px;
+	background-size: 40px;
 	user-select: none;
 	cursor: pointer;
 	transition: background-image .5s;
 }
 .faq-box.active .faq-head {
 	background: url("./images/faq-button-active.svg") right center no-repeat;
+	background-size: 40px;
 }
 .faq-body {
 	font-size: 20px;
@@ -947,7 +946,6 @@ body {
 		height: 60px;
 	}
 } 
-
 /* PLANS */
 .plans {
 	overflow: hidden;
@@ -1298,9 +1296,24 @@ body {
         right: -30px;
 	}
 }
-
+.features .green-ellipse {
+	width: 302px;
+	height: 1156px;
+	transform: rotate(162.93deg);
+	top: 440px;
+	left: -205px;
+	position: absolute;
+}
+@media (max-width:1300px) {
+	.features .green-ellipse {
+		width: 241px;
+		height: 925px;
+		transform: rotate(162.93deg);
+		top: 475px;
+        left: -150px;
+	}
+}
 /* Features images */
-
 .tree {
     width: 407px;
     height: 401px;
@@ -1415,7 +1428,6 @@ body {
 	bottom: calc(-30px + 195px);
     left: calc(-50px + -365px);
 }
-
 @media (max-width:1300px) {
 	.tree {
 		width: 325px;
