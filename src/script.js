@@ -1,10 +1,13 @@
 // BURGER TOGGLE
 const burger = document.querySelector(".burger");
 const navLinks = document.querySelector(".nav-links");
+const headerContainer = document.querySelector(".header-container");
 
+console.log(headerContainer)
 burger.addEventListener("click", () => {
     burger.classList.toggle("active");
     navLinks.classList.toggle("active");
+    headerContainer.classList.toggle("active");
 });
 
 // FAQ-BOX ACCORDION
